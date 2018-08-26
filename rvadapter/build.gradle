@@ -1,13 +1,13 @@
 apply plugin: 'com.android.library'
-
+//apply plugin: 'com.novoda.bintray-release'
 android {
-    compileSdkVersion 28
+    compileSdkVersion 25
 
 
 
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 28
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
 
@@ -19,16 +19,37 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            aaptOptions.cruncherEnabled = false
+            aaptOptions.useNewCruncher = false
         }
     }
 
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.android.support:appcompat-v7:28.0.0-rc01'
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+    implementation 'com.android.support:design:25.4.0'
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+// apply from: 'bintray.gradle'
+task getHomeDir << {
+    println gradle.gradleHomeDir
+}
+apply plugin: 'com.novoda.bintray-release'
+publish {
+    repoName = 'ElevenPublicRepository'
+    userOrg = 'elevengroup'
+    groupId = 'com.eleven.devlib'
+    artifactId = 'RVAdapter'
+    publishVersion = '1.0.0'
+    desc = 'Common reclerview adapter library for Android'
+    website = 'https://github.com/Koyoka'
 }

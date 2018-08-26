@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_height">50dp</dimen>
+    <dimen name="header_paddingTop">2dp</dimen>
+    <dimen name="header_minWidth">100dp</dimen>
+    <dimen name="header_text_size">12sp</dimen>
+    <dimen name="header_marginTop">3dp</dimen>
+    <dimen name="header_iv_marginRight">15dp</dimen>
+    <dimen name="header_switch">30dp</dimen>
+
+    <dimen name="footer_height">50dp</dimen>
+    <dimen name="footer_paddingTop">5dp</dimen>
+</resources>
