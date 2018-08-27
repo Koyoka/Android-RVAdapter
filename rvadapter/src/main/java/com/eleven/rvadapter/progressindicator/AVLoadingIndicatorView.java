@@ -42,6 +42,9 @@ import com.eleven.rvadapter.progressindicator.indicator.SemiCircleSpinIndicator;
 import com.eleven.rvadapter.progressindicator.indicator.SquareSpinIndicator;
 import com.eleven.rvadapter.progressindicator.indicator.TriangleSkewSpinIndicator;
 
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
 
 /**
  * Created by Jack on 2015/10/15
@@ -138,6 +141,7 @@ public class AVLoadingIndicatorView extends View {
                     BallGridBeat,
                     SemiCircleSpin
             })
+    @Retention(RetentionPolicy.SOURCE)
     public @interface Indicator {
     }
 
