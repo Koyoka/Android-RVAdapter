@@ -1,15 +1,16 @@
 apply plugin: 'com.android.library'
 //apply plugin: 'com.novoda.bintray-release'
+def vCode = 2
+def vName = "1.0.2"
+
 android {
     compileSdkVersion 25
-
-
 
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        versionCode vCode
+        versionName vName
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -49,7 +50,7 @@ publish {
     userOrg = 'elevengroup'
     groupId = 'com.eleven.devlib'
     artifactId = 'RVAdapter'
-    publishVersion = '1.0.0'
+    publishVersion = vName
     desc = 'Common reclerview adapter library for Android'
     website = 'https://github.com/Koyoka'
 }
