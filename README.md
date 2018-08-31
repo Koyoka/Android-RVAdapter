@@ -14,7 +14,7 @@ allprojects {
 
   module `build.gradle`:  
 ```gradle
-implementation 'com.eleven.devlib:RVAdapter:1.0.0'  
+implementation 'com.eleven.devlib:RVAdapter:1+'
 ```
 
 * demo
@@ -76,6 +76,42 @@ public class MainActivity extends AppCompatActivity {
     }
     //endregion
 }
+
+```
+
+* demo
+```java
+public class AutoPkgActivity extends AutoBasePkgActivity  {
+
+    @Override
+    protected int getResPkgArrayId() {
+        return R.array.fragmentMenu;
+    }
+}
+
+
+public class TestItemFragment extends AutoTestItemFragment {
+    @Override
+    protected TestFuncs buildTestFuncs() {
+
+        return new TestFuncs() {
+            @Override
+            public void testItem() {
+
+                addd("测试Toast", () -> {
+                    Toast.makeText(getContext(), "111", Toast.LENGTH_SHORT).show();
+                });
+            }
+        };
+    }
+}
+
+<string-array name="fragmentMenu">
+    <item>=====================================================================</item>
+    <item>activity:com.eleven.rvadapterdemo.MainActivity,进入Activity</item>
+    <item>com.eleven.rvadapterdemo.BlankFragment,切换fragment</item>
+    <item>com.eleven.rvadapterdemo.TestItemFragment,通用测试</item>
+</string-array>
 
 ```
 
