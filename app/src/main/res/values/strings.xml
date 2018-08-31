@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">RVAdapterDemo</string>
+
+
+    <string-array name="fragmentMenu">
+        <item>=====================================================================</item>
+        <item>activity:com.eleven.rvadapterdemo.MainActivity,进入Activity</item>
+        <item>com.eleven.rvadapterdemo.BlankFragment,切换fragment</item>
+        <item>com.eleven.rvadapterdemo.TestItemFragment,通用测试</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
