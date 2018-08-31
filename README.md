@@ -1,5 +1,7 @@
 # Android-RVAdapter
 Android recyclerView 通用Adapter
+
+下拉刷新 | 上拉加载 | Grid | 多ViewHolder
 * 依赖
 
 root `build.gradle`:  
@@ -17,7 +19,7 @@ allprojects {
 implementation 'com.eleven.devlib:RVAdapter:1+'
 ```
 
-* demo
+* demo 简单调用
 ```java
 public class MainActivity extends AppCompatActivity {
 
@@ -79,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
 ```
 
-* demo
+* demo 定义配置测试Item
 ```java
 public class AutoPkgActivity extends AutoBasePkgActivity  {
 
