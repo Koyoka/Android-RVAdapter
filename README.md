@@ -1,5 +1,5 @@
 # Android-RVAdapter
-Android recyclerView 通用Adapter
+Android recyclerView 通用Adapter（最新版本 com.eleven.devlib:RVAdapter:1.0.2）
 
 下拉刷新 | 上拉加载 | Grid | 多ViewHolder
 * 依赖
