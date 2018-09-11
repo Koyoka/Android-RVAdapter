@@ -36,3 +36,7 @@ dependencies {
     implementation project(':rvadapter')
 //    implementation project(':rvadapter')
 }
+configurations.all {
+    resolutionStrategy {
+        force 'com.android.support:support-v4:27.1.1'
+    }}
