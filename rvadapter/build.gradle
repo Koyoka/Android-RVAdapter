@@ -41,16 +41,16 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
 // apply from: 'bintray.gradle'
-task getHomeDir << {
-    println gradle.gradleHomeDir
-}
-apply plugin: 'com.novoda.bintray-release'
-publish {
-    repoName = 'ElevenPublicRepository'
-    userOrg = 'elevengroup'
-    groupId = 'com.eleven.devlib'
-    artifactId = 'RVAdapter'
-    publishVersion = vName
-    desc = 'Common reclerview adapter library for Android'
-    website = 'https://github.com/Koyoka'
-}
+//task getHomeDir << {
+//    println gradle.gradleHomeDir
+//}
+//apply plugin: 'com.novoda.bintray-release'
+//publish {
+//    repoName = 'ElevenPublicRepository'
+//    userOrg = 'elevengroup'
+//    groupId = 'com.eleven.devlib'
+//    artifactId = 'RVAdapter'
+//    publishVersion = vName
+//    desc = 'Common reclerview adapter library for Android'
+//    website = 'https://github.com/Koyoka'
+//}
