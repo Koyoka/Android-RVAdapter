@@ -14,13 +14,17 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-                        aaptOptions.cruncherEnabled = false
-            aaptOptions.useNewCruncher = false
+//                        aaptOptions.cruncherEnabled = false
+//            aaptOptions.useNewCruncher = false
         }
-        debug{
-                        aaptOptions.cruncherEnabled = false
-            aaptOptions.useNewCruncher = false
-        }
+//        debug{
+//                        aaptOptions.cruncherEnabled = false
+//            aaptOptions.useNewCruncher = false
+//        }
+    }
+
+    lintOptions {
+        abortOnError false
     }
 
     compileOptions {
@@ -42,7 +46,7 @@ dependencies {
     implementation project(':rvadapter')
 //    implementation project(':rvadapter')
 }
-configurations.all {
-    resolutionStrategy {
-        force 'com.android.support:support-v4:27.1.1'
-    }}
+//configurations.all {
+//    resolutionStrategy {
+//        force 'com.android.support:support-v4:27.1.1'
+//    }}
