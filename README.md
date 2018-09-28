@@ -1,5 +1,5 @@
 # Android-RVAdapter
-Android recyclerView 通用Adapter（最新版本 com.eleven.devlib:RVAdapter:1.0.2）
+Android recyclerView 通用Adapter（最新版本 com.github.Koyoka:Android-RVAdapter:1.0.2）
 
 下拉刷新 | 上拉加载 | Grid | 多ViewHolder
 * 依赖
@@ -8,7 +8,7 @@ root `build.gradle`:
 ```gradle
 allprojects {
 	repositories {
-        maven { url "https://elevengroup.bintray.com/ElevenPublicRepository/" }
+        maven { url "https://jitpack.io" }
     }
 }
 ```
@@ -16,7 +16,7 @@ allprojects {
 
   module `build.gradle`:  
 ```gradle
-implementation 'com.eleven.devlib:RVAdapter:1+'
+implementation 'com.github.Koyoka:Android-RVAdapter:1.0.2'
 ```
 
 * demo 简单调用
